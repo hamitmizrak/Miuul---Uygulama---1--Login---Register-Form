@@ -28,6 +28,13 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap"
         rel="stylesheet">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <!-- External css -->
+    <link rel="stylesheet" href="./register.css">
 </head>
 
 <body>
@@ -35,52 +42,48 @@
     <!-- start codes -->
 
     <div class="miuul_register_form">
-        <h3 class="header">Form Register</h3>
-        <div class="title">Hoşgeldiniz</div>
+        <h3 class="miuul_header text-uppercase text-center text-primary display-5">Form Register</h3>
+        <div class="miuul_title text-center text-success mt-2 mb-3 display-6 ">Hoşgeldiniz</div>
         <form action="#!" method="get" id="register_id" name="register_name" enctype="multipart/form-data">
             <table>
                 <tbody>
                     <!-- USERNAME -->
                     <tr>
-                        <td><span for="username">Username</span> </td>
+                        <td>
+                            <span class="text-capitalize me-3" for="username">Username:  </span> </td>
                         <td>
                             <div class="miuul_container">
                                 <input type="text" name="username" id="username" placeholder="Kullanıcı adınız"
-                                    class="miuul_input" title="Kullanıcı adınız" autofocus required>
+                                    class="miuul_input form-control mb-3 mt-3" title="Kullanıcı adınız" autofocus required>
                             </div>
                         </td>
                     </tr>
 
                     <!-- NAME -->
                     <tr>
-                        <td><span for="uname">Name</span> </td>
+                        <td><span class="text-capitalize" for="uname">Name</span> </td>
                         <td>
-                            <div class="miuul_container">
-                                <input type="text" name="uname" id="uname" placeholder="Adınız" class="miuul_input"
-                                    title="Adınız" required>
-                            </div>
+                            <input type="text" class="miuul_input form-control mb-3 mt-3" name="uname" id="uname"
+                                placeholder="Adınız" title="Adınız" required>
                         </td>
                     </tr>
 
                     <!-- SURNAME -->
                     <tr>
-                        <td><span for="usurname">Surname</span></td>
+                        <td><span class="text-capitalize" for="usurname">Surname</span></td>
                         <td>
-                            <div class="miuul_container">
-                                <input type="text" name="usurname" id="usurname" placeholder="Soyadınız"
-                                    class="miuul_input" title="Kullanıcı soyadınız" required>
-                            </div>
+                            <input type="text" name="usurname" id="usurname" placeholder="Soyadınız"
+                                class="miuul_input form-control mb-3 mt-3" title="Kullanıcı soyadınız" required>
                         </td>
                     </tr>
 
                     <!-- EMAİL -->
                     <tr>
-                        <td><span for="uemail">Email</span></td>
+                        <td><span class="text-capitalize" for="uemail" class="">Email</span></td>
                         <td>
-                            <div class="miuul_container">
-                                <input type="email" name="uemail" id="uemail" placeholder="Kullanıcı Emailiniz"
-                                    class="miuul_input" title="Kullanıcı Emailiniz" required>
-                            </div>
+                            <input type="email" name="uemail" id="uemail" placeholder="Kullanıcı Emailiniz"
+                                class="miuul_input form-control mb-3 mt-3" title="Kullanıcı Emailiniz" required>
+
                         </td>
                     </tr>
 
@@ -88,10 +91,8 @@
                     <tr>
                         <td><span for="upassword">Password</span></td>
                         <td>
-                            <div class="miuul_container">
-                                <input type="password" name="upassword" id="upassword" placeholder="Kullanıcı Şifresi"
-                                    class="miuul_input" title="Kullanıcı Şifresi" required>
-                            </div>
+                            <input type="password" name="upassword" id="upassword" placeholder="Kullanıcı Şifresi"
+                                class="miuul_input form-control mb-3 mt-3" title="Kullanıcı Şifresi" required>
                         </td>
                     </tr>
 
@@ -99,8 +100,10 @@
                     <tr>
                         <td></td>
                         <td>
-                            <input type="reset" name="reset" id="reset" title="Temizle" value="Temizle">
-                            <button type="submit" name="submit" id="submit" title="Gönder"> Gönder </button>
+                            <input class="btn btn-outline-danger shadow" type="reset" name="reset" id="reset" title="Temizle"
+                                value="Temizle">
+                            <button class="btn btn-outline-primary shadow" type="submit" name="submit" id="submit" title="Gönder">
+                                Gönder </button>
                         </td>
                     </tr>
                 </tbody>
@@ -109,7 +112,14 @@
         </form>
     </div>
 
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
     <!-- end codes -->
 </body>
 
